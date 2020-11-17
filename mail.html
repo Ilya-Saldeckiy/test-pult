@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-шаблон письма</title>
+    <style>       
+        .table{
+            border:none;
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        html{
+            box-sizing: border-box;
+        }
+
+        *,
+        *::before,
+        *::after{
+            box-sizing: inherit;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family:Tahoma,sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            padding-top: 50px;
+        }
+
+        img{
+            max-width: 100%;
+        }
+
+        .container{
+            max-width: 60%;
+            margin: 0 auto;
+        }
+
+        .main-caption{
+            color: #000000;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .text-test{
+            color: #565656;
+            margin-bottom: 50px;
+        }
+
+        .image-test{
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            width: 300px;
+        }
+
+        .link-bnt{
+            background-color: #7FC7FF;
+            border-radius: 30px 0;
+            padding: 15px 35px;
+            color: #333333;
+        }
+
+        .link-bnt:hover{
+            text-decoration: none;
+        }
+
+        @media (max-width: 1024px){
+            .container{
+                /* max-width: 690px; */
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 667px){
+            .container{
+                max-width: 100%;
+                /* max-width: 345px; */
+            }
+
+            .image-test{
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+
+        @media (max-width: 320px){
+            .container{
+                max-width: 100%;
+                /* max-width: 310px; */
+            }
+
+            .image-test{
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table align="center" cellpadding="0" cellspacing="0" class="table">
+        <tr>
+            <td>
+                <h1 class="main-caption">Заголовок 24px</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="text-test">
+                    <img src="https://on-desktop.com/wps/Nature___Rivers_and_lakes_Turquoise_lake_in_the_mountains_083623_.jpg" alt="River" class="image-test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nemo minima assumenda consequatur tenetur, veniam blanditiis modi quae nam alias laborum labore fugit, odit delectus illum quam molestiae optio vitae Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cupiditate maiores, ullam ex vero unde, ut est accusantium, accusamus molestiae adipisci cum enim. Ipsam atque eius cum ad similique aliquid! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ullam consectetur, neque sequi sunt doloribus numquam debitis distinctio architecto praesentium obcaecati assumenda sit exercitationem animi ducimus consequuntur tempore velit dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eveniet sed iure, adipisci mollitia assumenda amet illum totam magni nam. Veniam illo sunt exercitationem, quibusdam incidunt repellat alias asperiores accusamus?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#" class="link-bnt" target="_Blank">Кнопка</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
